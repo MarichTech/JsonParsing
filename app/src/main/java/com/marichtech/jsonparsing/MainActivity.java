@@ -49,13 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
                     for(int i=0; i< officesArray.length(); i++){
 
+                        //Obtaining values from json object
                         JSONObject jsonObject = officesArray.getJSONObject(i);
 
                         Log.e("Office Name: ", jsonObject.getString("name"));
+
+                        //Obtaining values from json array
                         JSONArray officialIndices  =jsonObject.getJSONArray("officialIndices");
 
                         Log.e( "officialIndices",officialIndices.toString());
-
 
                     }
 
